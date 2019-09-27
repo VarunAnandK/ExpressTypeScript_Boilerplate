@@ -20,7 +20,7 @@ createConnection({
     host: "localhost",
     port: 3306,
     username: "root",
-    password: "",
+    password: "Login@123",
     database: "alpha",
     entities: [
         __dirname + "/Database/Table/*.js"
