@@ -2,15 +2,15 @@ import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
 import { BaseTable } from "./BaseTable";
 
 @Entity()
-export class User extends BaseTable {
+export class user extends BaseTable {
 
     @Column()
     name: string;
 
-    @Column({ unique: true })
+    @Column()
     email: string;
 
-    @Column({ unique: true })
+    @Column()
     user_name: string;
 
     @Column()
