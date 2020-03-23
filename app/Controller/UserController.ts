@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
-import { getManager } from "typeorm";
+import { getManager, getConnection } from "typeorm";
 import { user } from "../Database/Table/user";
-
 
 export async function List(request: Request, response: Response) {
     const UserRepository = getManager().getRepository(user);
@@ -47,4 +46,30 @@ export async function Delete(request: Request, response: Response) {
     catch (e) {
         response.send({ Type: "E", Message: e });
     }
+
+}
+
+export async function Login(request: Request, response: Response) {
+    try {
+        const UserRepository = getManager().getRepository(user);
+        const User = await UserRepository.findOne({ where: { user_name: request.body.user_name }, relations: ["user_role"] });
+        if (User) {
+            if (User.password == request.body.password) {
+                await getConnection().createQueryBuilder()
+                    .update(user)
+                    .set({ api_token: "1234" })
+                    .where("id =" + User.id)
+                    .execute();
+                User.api_token = "1234";
+                response.send({ Type: "S", Message: "Login successfully", "AdditionalData": { 'User': User } });
+            }
+            else {
+                response.send({ Type: "E", Message: "Password Incorrect" });
+            }
+        }
+    }
+    catch (e) {
+        response.send({ Type: "E", Message: e });
+    }
+
 }

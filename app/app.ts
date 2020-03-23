@@ -3,6 +3,11 @@ const app: express.Application = express();
 import * as bodyParser from 'body-parser';
 import * as compression from "compression";
 import { AppRoutes } from './Router';
+import * as cors from 'cors';
+
+app.use(cors());
+app.use(compression());
+app.use(bodyParser.json());
 
 //Initialize the all router
 AppRoutes.forEach(route => {
@@ -18,7 +23,5 @@ AppRoutes.forEach(route => {
 //Get selected port from the iis if not default set to 8000
 app.set("port", process.env.PORT || 8000);
 //Get selected port from the iis if not default set to 8000
-app.use(compression());
-app.use(bodyParser.json());
 
 export default app;

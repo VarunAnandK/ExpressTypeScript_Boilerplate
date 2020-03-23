@@ -7,5 +7,6 @@ export const AppRoutes = [
     { path: 'UserById', method: "get", action: UserController.ById },
     { path: 'UserInsert', method: "post", action: UserController.Insert },
     { path: 'UserUpdate', method: "post", action: UserController.Update },
-    { path: 'UserDelete/:id', method: "get", action: UserController.Delete }
+    { path: 'UserDelete/:id', method: "get", action: UserController.Delete },
+    { path: 'Login', method: "post", action: UserController.Login }
 ]
