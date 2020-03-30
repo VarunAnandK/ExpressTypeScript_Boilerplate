@@ -1,0 +1,13 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "Login123",
+    "database": "ticket",
+    "entities": ["bin/Database/Table/*.js"],
+    "synchronize": true,
+    "logging": true,
+    "logger": "file",
+    "seeds": ["bin/Database/Seeds/**/*.seed.js"]
+}

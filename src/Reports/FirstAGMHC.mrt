@@ -1,0 +1,2142 @@
+{
+  "ReportVersion": "2018.3.5",
+  "ReportGuid": "44f6341dfc038fb8870d305f46f106cc",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportFile": "FirstAGMHC.mrt",
+  "ReportCreated": "/Date(111600000+0530)/",
+  "ReportChanged": "/Date(111600000+0530)/",
+  "EngineVersion": "EngineV2",
+  "CalculationMode": "Interpretation",
+  "ReportUnit": "Inches",
+  "Styles": {
+    "0": {
+      "Ident": "StiStyle",
+      "Name": "Hidden",
+      "Border": ";;;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:Transparent"
+    },
+    "1": {
+      "Ident": "StiStyle",
+      "Name": "HiddenFonts",
+      "Border": "All;;;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "TextBrush": "solid:Transparent"
+    }
+  },
+  "Dictionary": {
+    "Variables": {
+      "0": {
+        "Value": "0",
+        "Name": "MySum",
+        "Alias": "MySum",
+        "Type": "System.Int32"
+      }
+    },
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "root",
+        "Alias": "root",
+        "Key": "fdc92e9cd9634727bd88473ce0748f24",
+        "Columns": {
+          "0": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "uen_no",
+            "Index": -1,
+            "NameInSource": "uen_no",
+            "Alias": "uen_no",
+            "Type": "System.String"
+          },
+          "2": {
+            "Name": "address",
+            "Index": -1,
+            "NameInSource": "address",
+            "Alias": "address",
+            "Type": "System.String"
+          },
+          "3": {
+            "Name": "incorporation_date",
+            "Index": -1,
+            "NameInSource": "incorporation_date",
+            "Alias": "incorporation_date",
+            "Type": "System.String"
+          },
+          "4": {
+            "Name": "first_year_end_date",
+            "Index": -1,
+            "NameInSource": "first_year_end_date",
+            "Alias": "first_year_end_date",
+            "Type": "System.String"
+          },
+          "5": {
+            "Name": "first_agm_year_end_on_day_and_month",
+            "Index": -1,
+            "NameInSource": "first_agm_year_end_on_day_and_month",
+            "Alias": "first_agm_year_end_on_day_and_month",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "first_year_start_time",
+            "Index": -1,
+            "NameInSource": "first_year_start_time",
+            "Alias": "first_year_start_time",
+            "Type": "System.String"
+          },
+          "7": {
+            "Name": "first_year_end_time",
+            "Index": -1,
+            "NameInSource": "first_year_end_time",
+            "Alias": "first_year_end_time",
+            "Type": "System.String"
+          },
+          "8": {
+            "Name": "accounting_year_end_date",
+            "Index": -1,
+            "NameInSource": "accounting_year_end_date",
+            "Alias": "accounting_year_end_date",
+            "Type": "System.String"
+          },
+          "9": {
+            "Name": "account_year_end_on_day_and_month",
+            "Index": -1,
+            "NameInSource": "account_year_end_on_day_and_month",
+            "Alias": "account_year_end_on_day_and_month",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagm.root"
+      },
+      "1": {
+        "Ident": "StiDataTableSource",
+        "Name": "root2",
+        "Alias": "root2",
+        "Key": "9d2b7981f93d401a9102ffdb52b90999",
+        "Columns": {
+          "0": {
+            "Name": "row_num",
+            "Index": -1,
+            "NameInSource": "row_num",
+            "Alias": "row_num",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagmdirector.root"
+      },
+      "2": {
+        "Ident": "StiDataTableSource",
+        "Name": "root3",
+        "Alias": "root3",
+        "Key": "516b650a35b9491a958c46a1748891ed",
+        "Columns": {
+          "0": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagmsecretary.root"
+      },
+      "3": {
+        "Ident": "StiDataTableSource",
+        "Name": "root4",
+        "Alias": "root4",
+        "Key": "6c57ce30f784436ab2af60b3f11dd738",
+        "Columns": {
+          "0": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagmmanagingdirector.root"
+      },
+      "4": {
+        "Ident": "StiDataTableSource",
+        "Name": "root5",
+        "Alias": "root5",
+        "Key": "5c92e783bb124765ad7443e82d0345b9",
+        "Columns": {
+          "0": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "total_share_held",
+            "Index": -1,
+            "NameInSource": "total_share_held",
+            "Alias": "total_share_held",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "firstagmshareallotment.root"
+      },
+      "5": {
+        "Ident": "StiDataTableSource",
+        "Name": "root6",
+        "Alias": "root6",
+        "Columns": {
+          "0": {
+            "Name": "name",
+            "Index": -1,
+            "NameInSource": "name",
+            "Alias": "name",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagmauthorizedsignforsharecertificate.root"
+      },
+      "6": {
+        "Ident": "StiDataTableSource",
+        "Name": "root7",
+        "Alias": "root7",
+        "Columns": {
+          "0": {
+            "Name": "NAME",
+            "Index": -1,
+            "NameInSource": "NAME",
+            "Alias": "NAME",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "position",
+            "Index": -1,
+            "NameInSource": "position",
+            "Alias": "position",
+            "Type": "System.String"
+          }
+        },
+        "NameInSource": "firstagmpersent.root"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagm",
+        "Alias": "firstagm"
+      },
+      "1": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmdirector",
+        "Alias": "firstagmdirector"
+      },
+      "2": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmsecretary",
+        "Alias": "firstagmsecretary"
+      },
+      "3": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmmanagingdirector",
+        "Alias": "firstagmmanagingdirector"
+      },
+      "4": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmshareallotment",
+        "Alias": "firstagmshareallotment"
+      },
+      "5": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmauthorizedsignforsharecertificate",
+        "Alias": "firstagmauthorizedsignforsharecertificate"
+      },
+      "6": {
+        "Ident": "StiJsonDatabase",
+        "Name": "firstagmpersent",
+        "Alias": "firstagmpersent"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiPage",
+      "Name": "Page1",
+      "Guid": "73ba829354d647818254503fc667c202",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeader1",
+          "ClientRectangle": "0,0.2,7.49,1.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text1",
+              "ClientRectangle": "0.1,0.3,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ToUpperCase(root.name)}"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text2",
+              "ClientRectangle": "0.1,0.5,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Incorporated in the Republic of Singapore)\r\n"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text3",
+              "ClientRectangle": "0.1,1.1,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "MINUTES OF FIRST ANNUAL GENERAL MEETING "
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;14;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text40",
+              "ClientRectangle": "0.1,0.7,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Company Registration Number:{root.uen_no})"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "ResetPageNumber": true
+        },
+        "1": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand1",
+          "ClientRectangle": "0,2,7.49,2.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_1",
+              "ClientRectangle": "0.1,0,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Date"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text_2",
+              "ClientRectangle": "0.8,0,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text_3",
+              "ClientRectangle": "0.9,0,2.6,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.incorporation_date}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextFormat": {
+                "Ident": "StiCustomFormatService",
+                "StringFormat": "dd/MM/yyyy"
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text_4",
+              "Guid": "07240e21dd1a41cb89ac3a3b9feebee0",
+              "ClientRectangle": "0.1,0.3,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Time"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text_5",
+              "Guid": "80003757a48d4710ac8fa1d38de787b4",
+              "ClientRectangle": "0.8,0.3,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text_6",
+              "ClientRectangle": "0.9,0.3,3.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.first_year_start_time}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text_7",
+              "ClientRectangle": "0.1,0.6,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Place"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text_8",
+              "Guid": "e95eed735c0b4a2aa101bf477be8d486",
+              "ClientRectangle": "0.8,0.6,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text_9",
+              "CanGrow": true,
+              "ClientRectangle": "0.9,0.6,6.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.address}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "Text_10",
+              "ClientRectangle": "0.1,0.9,0.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Present"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "10": {
+              "Ident": "StiText",
+              "Name": "Text_11",
+              "Guid": "094497355ac246f9908776b30f29283e",
+              "ClientRectangle": "0.8,0.9,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "11": {
+              "Ident": "StiText",
+              "Name": "Text_12",
+              "ClientRectangle": "0.9,0.9,1.8,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Please see attendance list. "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "12": {
+              "Ident": "StiText",
+              "Name": "Text4",
+              "ClientRectangle": "0.1,1.3,2.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "INCORPORATION OF COMPANY"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "13": {
+              "Ident": "StiText",
+              "Name": "Text5",
+              "Guid": "45c55da934c6a9d0d32b17a3f489b6f1",
+              "ClientRectangle": "0.1,1.6,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "14": {
+              "Ident": "StiText",
+              "Name": "Text6",
+              "CanGrow": true,
+              "ClientRectangle": "1.3,1.6,6.1,0.8",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the Company was incorporated on {root.incorporation_date} (Date of Incorporation) and that the Registration Number assigned to it is {root.uen_no}. The Certificate of Incorporation was tabled together with a print of the Memorandum and Articles of Association of the Company.”"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "15": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLine1",
+              "ClientRectangle": "0.1,1.2,7.3,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Color": "Gray",
+              "Size": 2,
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          },
+          "CanBreak": true
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "Data2",
+          "ClientRectangle": "0,4.8,7.49,0",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "DataSourceName": "root"
+        },
+        "3": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand7",
+          "ClientRectangle": "0,5.2,7.49,1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text8",
+              "Guid": "0160cd75956b025d3a62ebaa8a67462a",
+              "ClientRectangle": "0.1,0.1,2.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "FIRST DIRECTORS"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text9",
+              "Guid": "9d219a171d6e92fe6d293612603f2f3c",
+              "ClientRectangle": "0.1,0.4,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text11",
+              "Guid": "4e2615c7a7cbf6ee35002f7f0ff2791e",
+              "ClientRectangle": "1.2,0.4,6.2,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That it be noted and confirmed that the following persons, are the First  Director(s) of the Company and they have accepted office.” "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "4": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand1",
+          "ClientRectangle": "0,6.6,7.49,0.3",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_13",
+              "ClientRectangle": "0.1,0,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root2.name}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "DataSourceName": "root2"
+        },
+        "5": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand2",
+          "ClientRectangle": "0,7.3,7.49,0.9",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text12",
+              "Guid": "e7101ee2b8e995b46133db376d396da0",
+              "ClientRectangle": "0.1,0,2.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "MANAGING DIRECTORS"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text15",
+              "Guid": "0ded3596080fc0a1fb12e7b9c4c2e336",
+              "ClientRectangle": "1.3,0.3,6.1,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That it be noted and confirmed that the following persons are the Managing Director(s) and he/she has accepted office.” "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true,
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text10",
+              "Guid": "c6742692a509534e29dc6ee85ccf0dea",
+              "ClientRectangle": "0.1,0.3,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "6": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand4",
+          "ClientRectangle": "0,8.6,7.49,0.3",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_15",
+              "ClientRectangle": "0.1,0,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root4.name}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "root4"
+        },
+        "7": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand3",
+          "ClientRectangle": "0,9.3,7.49,0.9",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text22",
+              "Guid": "47ae4a75eaab6e8c5fb7eeda55fc5199",
+              "ClientRectangle": "0.1,0,2.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "FIRST SECRETARY"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text23",
+              "Guid": "2035d275552020b71397cb52e2d72970",
+              "ClientRectangle": "1.3,0.3,6.1,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That it be noted and confirmed that the following person is the Company Secretary and he/she has accepted office.”"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true,
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text27",
+              "Guid": "e90a88a584de127191b3b2acec840cd2",
+              "ClientRectangle": "0.1,0.3,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "8": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand2",
+          "ClientRectangle": "0,10.6,7.49,0.3",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_14",
+              "ClientRectangle": "0.1,0,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root3.name}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "root3"
+        },
+        "9": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand4",
+          "ClientRectangle": "0,11.3,7.49,0.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text17",
+              "ClientRectangle": "0.1,0,1.9,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "REGISTERED OFFICE"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text28",
+              "Guid": "dda66ecc56cadb2ef3be6c4bc11dbe29",
+              "CanGrow": true,
+              "ClientRectangle": "1.3,0.3,6.1,0.4",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the registered office of the Company is situated  {root.address}.” "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true,
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text38",
+              "Guid": "8142b758b1992b5bbf66cde77bc27535",
+              "ClientRectangle": "0.1,0.3,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "10": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand9",
+          "ClientRectangle": "0,12.5,7.49,0",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "DataSourceName": "root"
+        },
+        "11": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand5",
+          "ClientRectangle": "0,12.9,7.49,0.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text18",
+              "ClientRectangle": "0.1,0,3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "ISSUE OF SHARES TO SIGNATORIES "
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text54",
+              "Guid": "a09bb248aa4fe30ce15a6cf9dbed223a",
+              "ClientRectangle": "1.3,0.3,6.1,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the signatories to the Memorandum of Association are registered as members in respect of the shares for which are subscribed in full cost at par, namely:”"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "TextQuality": "Wysiwyg",
+              "AllowHtmlTags": true,
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text55",
+              "Guid": "67fb5df21a206f800885e4b573e44c32",
+              "ClientRectangle": "0.1,0.3,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "12": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand8",
+          "ClientRectangle": "0,14.1,7.49,0",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "DataSourceName": "root5"
+        },
+        "13": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand6",
+          "ClientRectangle": "0,14.5,7.49,0.3",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text19",
+              "ClientRectangle": "0.1,0.1,1.4,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Name Of Allottees"
+              },
+              "Font": "Times New Roman;12;Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text25",
+              "Guid": "17cbd211cdb441a0ac1980dd18031f44",
+              "ClientRectangle": "4.9,0.1,2.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Number Of Shares Allotted"
+              },
+              "Font": "Times New Roman;12;Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          }
+        },
+        "14": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand3",
+          "ClientRectangle": "0,15.2,7.49,0.3",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "CanBreak": true,
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text24",
+              "CanGrow": true,
+              "ClientRectangle": "0.1,0,4.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root5.name}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text26",
+              "CanGrow": true,
+              "ClientRectangle": "4.9,0,2.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root5.total_share_held}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "root5"
+        }
+      },
+      "PageWidth": 8.27,
+      "PageHeight": 11.69,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 0.39,
+        "Right": 0.39,
+        "Top": 0.39,
+        "Bottom": 0.29
+      }
+    },
+    "1": {
+      "Ident": "StiPage",
+      "Name": "Page2",
+      "Guid": "94d6093fe7e74acdb32bf378a487cded",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeaderBand1",
+          "ClientRectangle": "0,0.2,7.49,1",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_16",
+              "ClientRectangle": "0.1,0.3,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ToUpperCase(root.name)}"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text_17",
+              "ClientRectangle": "0.1,0.5,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Incorporated in the Republic of Singapore)\r\n"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text_19",
+              "ClientRectangle": "0.1,0.7,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Company Registration Number:{root.uen_no})"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "ResetPageNumber": true
+        },
+        "1": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand8",
+          "ClientRectangle": "0,1.6,7.49,1.6",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text29",
+              "ClientRectangle": "0.1,0.1,3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "SEALING OF SHARE CERTIFICATES "
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text30",
+              "ClientRectangle": "0.1,1.1,3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "SIGNING OF SHARE CERTIFICATES "
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text31",
+              "ClientRectangle": "1.2,1.4,6.2,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That of the Company be and are hereby authorized to sign the share certificates.” "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text32",
+              "ClientRectangle": "0.1,1.4,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED:-"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text7",
+              "Guid": "0ceb4ca50071ad82b116b74effa30d47",
+              "ClientRectangle": "0.1,0.4,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text13",
+              "Guid": "a4514b17b95a80be3ce22aa37a47046a",
+              "ClientRectangle": "1.3,0.4,6.1,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the Common Seal of the Company be affixed to the aforementioned share certificates in accordance with the provisions of its Articles of Association.”"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            }
+          }
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "Data7",
+          "ClientRectangle": "0,3.6,7.49,0.4",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text39",
+              "CanGrow": true,
+              "ClientRectangle": "0.1,0.1,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root6.name}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn"
+            }
+          },
+          "DataSourceName": "root6"
+        },
+        "3": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand9",
+          "ClientRectangle": "0,4.4,7.49,3.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text16",
+              "Guid": "c82372d0b3664379a36a1de2da8922b2",
+              "CanShrink": true,
+              "ClientRectangle": "1.3,0.4,6.1,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the Common Seal of the Company, an impression of which has been affixed on the right of this resolution, be and is hereby approved for use as the Common Seal of the Company.” "
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text35",
+              "ClientRectangle": "0.1,0.1,1.4,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "COMMON SEAL "
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text36",
+              "ClientRectangle": "0.1,1.1,1.6,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "FINANCIAL YEAR "
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text37",
+              "ClientRectangle": "0.1,2.3,1.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "CONCLUSION"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text14",
+              "Guid": "6c116271b575e7eea1d23b4abff3faf1",
+              "ClientRectangle": "0.1,0.4,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text20",
+              "Guid": "92acc4f9d04b6187e310d5a2ea131ea9",
+              "ClientRectangle": "0.1,1.4,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text21",
+              "Guid": "d5bbcef59eb5a14275e6ea117ce053af",
+              "CanGrow": true,
+              "ClientRectangle": "1.3,1.4,6.1,0.6",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That the first financial period of the Company be from {root.incorporation_date} (Date of Incorporation) to {root.first_year_end_date} and thereafter, the financial year of the Company shall end on {root.first_agm_year_end_on_day_and_month}  each year until otherwise decided.”\r\n"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text56",
+              "Guid": "c27d66301fae507277e0bb3e52ef34a6",
+              "ClientRectangle": "0.1,2.6,1.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "RESOLVED :- "
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text58",
+              "Guid": "2504edc7be45f1b7d82d7281558bb6df",
+              "ClientRectangle": "1.3,2.6,6.1,0.5",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "“That there being no other business to transact, the meeting was terminated with a vote of thanks to the Chairman.” "
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:0,0,0",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:0,0,0",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            }
+          },
+          "CanBreak": true
+        },
+        "4": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand10",
+          "ClientRectangle": "0,8.2,7.49,0",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "DataSourceName": "root"
+        },
+        "5": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand5",
+          "ClientRectangle": "0,8.6,7.49,1.1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "CanBreak": true,
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text33",
+              "Guid": "a2e2e4e7f773473795732c3a6cd1ad78",
+              "CanGrow": true,
+              "ClientRectangle": "0.1,0.6,3.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root2.name}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text34",
+              "Guid": "8d15c54e24214ed29ea89bb0e03263ad",
+              "ClientRectangle": "0.1,0.9,1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "DIRECTOR"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLine5",
+              "Guid": "0d90e4879d004eba8aba34d9ea315fff",
+              "ClientRectangle": "0.1,0.6,3.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          },
+          "DataSourceName": "root2",
+          "Columns": 2
+        },
+        "6": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand6",
+          "ClientRectangle": "0,10.1,7.49,1.1",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "CanBreak": true,
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text_18",
+              "Guid": "5e66548369444a1795f32ca75cbcb423",
+              "CanGrow": true,
+              "ClientRectangle": "0.1,0.6,3.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root4.name}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text_20",
+              "Guid": "4f5d178b3586444fb8d9668bd7dc7442",
+              "ClientRectangle": "0.1,0.9,2.2,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "MANAGING DIRECTOR"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive1",
+              "Guid": "4b997e2a0bd74abb8aa5d822387c9729",
+              "ClientRectangle": "0.1,0.6,3.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          },
+          "DataSourceName": "root4",
+          "Columns": 2
+        }
+      },
+      "PageWidth": 8.27,
+      "PageHeight": 11.69,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 0.39,
+        "Right": 0.39,
+        "Top": 0.39,
+        "Bottom": 0.39
+      }
+    },
+    "2": {
+      "Ident": "StiPage",
+      "Name": "Page3",
+      "Guid": "a8cbe948e8d84c35a6fa2b41faaddd26",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Border": ";;2;;;;;solid:Black",
+      "Brush": "solid:Transparent",
+      "Components": {
+        "0": {
+          "Ident": "StiPageHeaderBand",
+          "Name": "PageHeader3",
+          "Guid": "bd3e51d797c446f58531ff19ed336601",
+          "ClientRectangle": "0,0.2,7.49,1.4",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text41",
+              "Guid": "9f1601543ea64cb29eb25d6885444412",
+              "ClientRectangle": "0.1,0.3,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ToUpperCase(root.name)}"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text53",
+              "Guid": "aac5c5837af949649e9f5bcc54875525",
+              "ClientRectangle": "0.1,1.1,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "MINUTES OF FIRST ANNUAL GENERAL MEETING "
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;14;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text42",
+              "Guid": "142f6634bfc049458966cdf0a30bb526",
+              "ClientRectangle": "0.1,0.5,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Incorporated in the Republic of Singapore)\r\n"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text57",
+              "Guid": "bdd37ec7e7c94bbaa38f0df6a03cab42",
+              "ClientRectangle": "0.1,0.7,7.3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "(Company Registration Number:{root.uen_no})"
+              },
+              "HorAlignment": "Center",
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            }
+          },
+          "ResetPageNumber": true
+        },
+        "1": {
+          "Ident": "StiHeaderBand",
+          "Name": "HeaderBand10",
+          "ClientRectangle": "0,2,7.49,1.8",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text43",
+              "Guid": "15c2cdaae9ee4df5a446d9c0e231b711",
+              "ClientRectangle": "0.1,0.1,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Date"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text44",
+              "Guid": "74983bb97c984403af14cd80a17f648a",
+              "ClientRectangle": "0.8,0.1,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiText",
+              "Name": "Text45",
+              "Guid": "d6878463a2fd42369dacd7b6f41271dd",
+              "ClientRectangle": "0.9,0.1,2.7,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.incorporation_date}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextFormat": {
+                "Ident": "StiCustomFormatService",
+                "StringFormat": "dd/MM/yyyy"
+              },
+              "Type": "Expression"
+            },
+            "3": {
+              "Ident": "StiText",
+              "Name": "Text46",
+              "Guid": "4c2dafa07bf442559160bc522092d523",
+              "ClientRectangle": "0.1,0.4,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Time"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "4": {
+              "Ident": "StiText",
+              "Name": "Text47",
+              "Guid": "3c6c16eb57d044f8a5c1b8df4a7b7a57",
+              "ClientRectangle": "0.8,0.4,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "5": {
+              "Ident": "StiText",
+              "Name": "Text48",
+              "Guid": "0fcb962b8d904645ade739d50652b438",
+              "ClientRectangle": "0.9,0.4,3,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.first_year_end_time}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "6": {
+              "Ident": "StiText",
+              "Name": "Text49",
+              "Guid": "e8e9aa6c3b9f4731bd6145e40a7d7161",
+              "ClientRectangle": "0.1,0.7,0.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "Place"
+              },
+              "Font": "Times New Roman;12;Bold;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "7": {
+              "Ident": "StiText",
+              "Name": "Text50",
+              "Guid": "9198db71a73b4d329efc95e04a3c6564",
+              "ClientRectangle": "0.8,0.7,0.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": ":"
+              },
+              "Font": ";12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "8": {
+              "Ident": "StiText",
+              "Name": "Text51",
+              "Guid": "f04afb26dd4843cf9a06a1257702e719",
+              "CanGrow": true,
+              "ClientRectangle": "0.9,0.7,6.5,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root.address}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "Expression"
+            },
+            "9": {
+              "Ident": "StiText",
+              "Name": "Text52",
+              "ClientRectangle": "0.1,1.2,0.9,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "PRESENT"
+              },
+              "Font": "Times New Roman;12;Bold, Underline;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "10": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLine3",
+              "Guid": "1647246021df4ecaa499552b1f808193",
+              "ClientRectangle": "0.1,1.1,7.3,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Color": "Gray",
+              "Size": 2,
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          },
+          "CanBreak": true
+        },
+        "2": {
+          "Ident": "StiDataBand",
+          "Name": "DataBand7",
+          "ClientRectangle": "0,4.2,7.49,1.2",
+          "Interaction": {
+            "Ident": "StiBandInteraction"
+          },
+          "CanBreak": true,
+          "Border": ";;;;;;;solid:Black",
+          "Brush": "solid:Transparent",
+          "Components": {
+            "0": {
+              "Ident": "StiText",
+              "Name": "Text59",
+              "Guid": "2494ee34b20d6dccde18f9bde84212ea",
+              "CanGrow": true,
+              "ClientRectangle": "0.2,0.7,3.1,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{root7.NAME}"
+              },
+              "CanBreak": true,
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "TextOptions": {
+                "WordWrap": true
+              },
+              "Type": "DataColumn"
+            },
+            "1": {
+              "Ident": "StiText",
+              "Name": "Text60",
+              "Guid": "0f00af25aa06553f1e522631052e9164",
+              "ClientRectangle": "0.2,1,2.2,0.2",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "Text": {
+                "Value": "{ToUpperCase(root7.position)}"
+              },
+              "Font": "Times New Roman;12;;",
+              "Border": ";;;;;;;solid:Black",
+              "Brush": "solid:Transparent",
+              "TextBrush": "solid:Black",
+              "Type": "Expression"
+            },
+            "2": {
+              "Ident": "StiHorizontalLinePrimitive",
+              "Name": "HorizontalLinePrimitive2",
+              "Guid": "b0ccffa72d447176db534f9b80dde7d8",
+              "ClientRectangle": "0.2,0.7,3.1,0.01",
+              "Interaction": {
+                "Ident": "StiInteraction"
+              },
+              "StartCap": ";;;",
+              "EndCap": ";;;"
+            }
+          },
+          "DataSourceName": "root7",
+          "Columns": 2
+        }
+      },
+      "PageWidth": 8.27,
+      "PageHeight": 11.69,
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Margins": {
+        "Left": 0.39,
+        "Right": 0.39,
+        "Top": 0.39,
+        "Bottom": 0.39
+      }
+    }
+  }
+}

@@ -1,10 +1,10 @@
-import { PrimaryGeneratedColumn, Column } from "typeorm";
+import { PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
 
-export class BaseTable {
+export class BaseTable extends BaseEntity {
     @PrimaryGeneratedColumn({ type: "bigint" })
     id: number;
 
-    @Column({ type: "boolean", default : 1 })
+    @Column({ type: "boolean", default: 1 })
     status: boolean;
 
     @Column({ type: "bigint" })
@@ -13,9 +13,9 @@ export class BaseTable {
     @Column({ type: "datetime", default: () => 'CURRENT_TIMESTAMP' })
     created_on: Date;
 
-    @Column({ type: "bigint", nullable : true })
+    @Column({ type: "bigint", nullable: true })
     updated_by_id: number;
 
-    @Column({ type: "datetime", nullable : true })
+    @Column({ type: "datetime", nullable: true })
     updated_on: Date;
 }

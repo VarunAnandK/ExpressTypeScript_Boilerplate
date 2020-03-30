@@ -2,12 +2,14 @@
     "name": "alpha-api",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "bin/server.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "tsc": "tsc",
-        "dev": "ts-node-dev --respawn --transpileOnly ./app/server.ts",
-        "prod": "tsc && node ./build/server.js"
+        "serve": "ts-node-dev --respawn --transpileOnly ./server.ts",
+        "build": "npm run clean  && tsc",
+        "db:seed": "npm run build && ts-node ./node_modules/typeorm-seeding/dist/cli.js seed --config ormconfig.json",
+        "typeorm": " ts-node-dev --respawn --transpileOnly ./node_modules/typeorm/cli.js",
+        "clean": "tsc --build --clean",
+        "start": "node bin/server.js"
     },
     "author": "varun anand",
     "license": "ISC",
@@ -19,11 +21,16 @@
         "body-parser": "^1.19.0",
         "compression": "^1.7.4",
         "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
         "errorhandler": "^1.5.1",
         "express": "^4.17.1",
         "mysql": "^2.17.1",
+        "pusher": "^3.0.0",
+        "stimulsoft-reports-js": "^2020.2.2",
         "ts-node-dev": "^1.0.0-pre.43",
         "typeorm": "^0.2.19",
-        "typescript": "^3.6.3"
+        "typeorm-seeding": "^1.3.0",
+        "typescript": "^3.6.3",
+        "unique-key": "0.0.6"
     }
 }

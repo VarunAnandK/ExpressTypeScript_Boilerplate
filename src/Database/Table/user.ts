@@ -10,9 +10,12 @@ export class user extends BaseTable {
     user_role: user_role;
 
     @Column()
+    user_role_id: number;
+
+    @Column({ nullable: true })
     name: string;
 
-    @Column()
+    @Column({ nullable: true })
     email: string;
 
     @Column()
@@ -21,6 +24,6 @@ export class user extends BaseTable {
     @Column()
     password: string;
 
-    @Column()
+    @Column({ nullable: true })
     api_token: string;
 }
