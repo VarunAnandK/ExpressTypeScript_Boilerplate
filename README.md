@@ -12,3 +12,8 @@
 3. Create Table At src/Database/Table folder
 4. Create Controller at src/Controller folder
 5. Set Router in src/Router.ts file
+
+# Hosting
+
+1. npm run build
+2. copy over the all excudle of src folder to server

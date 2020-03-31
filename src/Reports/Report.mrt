@@ -1,10 +1,10 @@
 {
   "ReportVersion": "2020.2.1.0",
-  "ReportGuid": "11ff8cff09014e31a68f6d51aa038ded",
+  "ReportGuid": "4c2a0f6e505349ada44355e0d5adbbab",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportCreated": "/Date(1585634906000+0530)/",
-  "ReportChanged": "/Date(1585636051557+0530)/",
+  "ReportCreated": "/Date(1585634169000+0530)/",
+  "ReportChanged": "/Date(1585634179161+0530)/",
   "EngineVersion": "EngineV2",
   "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
   "ReferencedAssemblies": {
@@ -21,7 +21,7 @@
     "0": {
       "Ident": "StiPage",
       "Name": "Page1",
-      "Guid": "6cce8f04260548c28b93bf99f33bfa72",
+      "Guid": "1e12cfb06ec145a9a6e879c5ff17e197",
       "Interaction": {
         "Ident": "StiInteraction"
       },
@@ -29,40 +29,22 @@
       "Brush": "solid:",
       "Components": {
         "0": {
-          "Ident": "StiReportTitleBand",
-          "Name": "ReportTitleBand1",
-          "ClientRectangle": "0,0.4,19,1.6",
+          "Ident": "StiText",
+          "Name": "Text1",
+          "MinSize": "0,0",
+          "MaxSize": "0,0",
+          "ClientRectangle": "2,2.2,7.2,2",
           "Interaction": {
             "Ident": "StiInteraction"
           },
+          "Text": {
+            "Value": "dfgdgfdfgdfg"
+          },
+          "Font": ";20;;",
           "Border": ";;;;;;;solid:Black",
           "Brush": "solid:",
-          "Components": {
-            "0": {
-              "Ident": "StiText",
-              "Name": "Text1",
-              "CanShrink": true,
-              "CanGrow": true,
-              "MinSize": "0,0",
-              "MaxSize": "0,0",
-              "ClientRectangle": "1.4,0.2,9.2,1.2",
-              "Interaction": {
-                "Ident": "StiInteraction"
-              },
-              "Text": {
-                "Value": "dsfgsdgsdfsdfsdfs dfs sdf sdf "
-              },
-              "CanBreak": true,
-              "Font": ";20;;",
-              "Border": "All;;;;;;;solid:Black",
-              "Brush": "solid:",
-              "TextBrush": "solid:Black",
-              "TextOptions": {
-                "WordWrap": true
-              },
-              "Type": "Expression"
-            }
-          }
+          "TextBrush": "solid:Black",
+          "Type": "Expression"
         }
       },
       "PageWidth": 21.0,

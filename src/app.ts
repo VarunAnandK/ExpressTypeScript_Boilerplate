@@ -8,30 +8,31 @@ import { getRepository, getManager } from 'typeorm';
 import { user } from './Database/Table/user';
 import errorHandler = require('errorhandler');
 
-
-
+//Api token validation
 var ApiTockenValidation = async function (req: express.Request, res: express.Response, next) {
-    // if (req.headers["authorization"]) {
-    //     const UserRepository = getManager().getRepository(user);
-    //     const User = await UserRepository.findAndCount({ where: { api_token: req.headers["authorization"] } });
-    //     if (User[1] > 0) {
-    //         next();
-    //     }
-    //     else {
-    //         res.send({ Type: 'E', Message: "Not Valid api" });
-    //     }
-    // }
-    // else {
-    //     res.send({ Type: 'E', Message: "Not Valid api" });
-    // }
-    next();
+    if (req.headers["authorization"]) { // check authorization is send by other application
+        //check the token in database 
+        const UserRepository = getManager().getRepository(user);
+        const User = await UserRepository.findAndCount({ where: { api_token: req.headers["authorization"] } });
+        //check the token in database 
+        if (User[1] > 0) {
+            next(); // token valid allow the perform the request
+        }
+        else {
+            res.send({ Type: 'E', Message: "Not Valid api" }); // send invalid request 
+        }
+    }
+    else {
+        res.send({ Type: 'E', Message: "Not Valid api" }); // send invalid request 
+    }
 }
+//Api token validation
 
-app.use(cors());
-app.use(compression());
-app.use(bodyParser.json());
-app.use(ApiTockenValidation);
-app.use(errorHandler());
+app.use(cors()); // used for call the api from any device or application
+app.use(compression()); // used for compress the request and response
+app.use(bodyParser.json()); // user to convert the request as json format
+//app.use(ApiTockenValidation); // used to validate the api token
+app.use(errorHandler()); // user for log the error 
 
 
 //Initialize the all router
